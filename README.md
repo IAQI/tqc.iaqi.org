@@ -9,13 +9,25 @@ wget --mirror \
      --adjust-extension \
      --page-requisites \
      --no-parent \
-     --reject-regex ".*(\?|#).*" \
-     --exclude-directories="*/wp-json/*,*/xmlrpc.php*" \
      --wait=0.5 \
      --random-wait \
      --compression=auto \
      --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" \
      https://tqc-conference.org/
+```
+
+```bash
+wget --mirror \
+     --convert-links \
+     --adjust-extension \
+     --page-requisites \
+     --restrict-file-names=windows \
+     --no-parent \
+     --wait=0.5 \
+     --random-wait \
+     --compression=auto \
+     --user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" \
+     https://tqc-conference.org/tqc-2024/
 ```
 
 ## Downloading from Wayback Machine
