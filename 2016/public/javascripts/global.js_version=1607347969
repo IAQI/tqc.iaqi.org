@@ -1,0 +1,41 @@
+var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opens = _____WB$wombat$assign$function_____("opens");
+HTTP_GET_VARS=new Array();
+strGET=document.location.search.substr(1,document.location.search.length);
+if(strGET!='') {
+  gArr=strGET.split('&');
+  for(i=0;i<gArr.length;++i) {
+    v='';vArr=gArr[i].split('=');
+    if(vArr.length>1){v=vArr[1];}
+    HTTP_GET_VARS[unescape(vArr[0])]=unescape(v);
+  }
+}
+
+function GET(v) {
+  if(!HTTP_GET_VARS[v]){return 'undefined';}
+  return HTTP_GET_VARS[v];
+}
+}
+
+/*
+     FILE ARCHIVED ON 08:40:21 Sep 13, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:09:11 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.517
+  load_resource: 43.705
+  PetaboxLoader3.resolve: 30.403
+  PetaboxLoader3.datanode: 11.999
+*/

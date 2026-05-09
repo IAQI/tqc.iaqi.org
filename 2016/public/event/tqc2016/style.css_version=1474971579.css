@@ -1,0 +1,411 @@
+@charset "utf-8";
+
+/* @import url(https://web.archive.org/web/20230913084020cs_/https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic); */
+ @import url(https://web.archive.org/web/20230913084020cs_/https://fonts.googleapis.com/css?family=Cantarell:400,400italic,700); 
+
+/* latin */
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cantarell Regular'), local('Cantarell-Regular'), url(https://web.archive.org/web/20230913084020im_/https://fonts.gstatic.com/s/cantarell/v6/V86VyqXbc09Sss3BPsMj11tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cantarell Bold'), local('Cantarell-Bold'), url(https://web.archive.org/web/20230913084020im_/https://fonts.gstatic.com/s/cantarell/v6/Yir4ZDsCn4g1kWopdg-ehOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cantarell Oblique'), local('Cantarell-Oblique'), url(https://web.archive.org/web/20230913084020im_/https://fonts.gstatic.com/s/cantarell/v6/Qd6zZq_wf1596L3V_8MIs44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/*** customize forms ***/
+#gender label::after{content:" (for statistics purposes)";display:block;}
+
+
+#formgroup_field_8 label, #formgroup_field_10 label {
+    text-align: left;
+}
+
+select[name="9"] {
+    width: auto;
+}
+
+/* registration header */
+#headLines table {
+    font-size: 1em;
+    display: none;
+}
+#headLines::before {
+    font-size: 1.2em;
+    content: "Registration";
+}
+
+/* remove 50% forms */
+.col-lg-6 {
+    width: 100%;
+    padding: 0;
+}
+
+.col-xs-3 {
+    width: 35%;
+}
+
+.col-xs-9 {
+    width: 65%;
+}
+
+.col-lg-12 {
+    padding: 0;
+}
+
+.panel-body, .panel {
+    padding: 15px 0;
+}
+
+.panel { 
+box-shadow: none; 
+}
+
+.row {
+    margin: 0;
+}
+
+.title {
+/*font-weight: bold;*/
+font-style: italic;
+
+}
+
+/*** defaults ***/
+
+body {
+ font-family: 'Cantarell', sans-serif;
+ font-size: 14px;
+ max-width: 60em;
+ margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*** get overall sizing etc. under control ***/
+
+/* default containers scale */
+.container {
+ flex: 1 0 50%;
+ width: auto !important;
+}
+
+/* select */
+select {
+    width: auto !important;
+}
+
+/* header and footer take full width */
+div.jumbotron-headimg {
+ flex: 0 0 100%;
+ /* header to top */
+ order: -1;
+}
+.partner {
+ flex: 1 0 100%;
+}
+
+/*** footer attribution ***/
+
+.attribution {
+text-align: right;
+font-size: 0.9em;
+}
+
+/*** content formatting ***/
+
+.panel {
+ border: none;
+}
+
+p, li {
+    text-align: justify;
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+     line-height: 1.7em;
+}
+
+
+/* display select button for dinner and conference bookings*/
+
+ #feeForm select {
+	display:none !important;
+} 
+
+/*** navigation ***/
+
+/* conference title */
+.navbar-brand {
+ color: black !important;
+ padding: 1em 1.5em;
+ display: none;
+}
+
+.navbar-inverse {
+ background-color: transparent;
+ border: none;
+}
+
+ul.top-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 3em;
+    /* minimal height of navigation line */
+    line-height: 2em;
+    /* right padding of navigation */
+ padding-right: 0em;
+ font-weight: bold;
+}
+
+ul.top-nav li {
+ float: none;
+ text-align: left !important;
+}
+
+ul.top-nav li a {
+  display: block;
+  padding: 0;
+  line-height: 1.8em;
+}
+
+ul.top-nav li.menu_selected {
+    background-color: transparent;
+}
+
+ul.top-nav li:hover {
+ background-color: transparent;
+}
+
+/* navigation link color */
+ul.top-nav a {
+ font-size: 1.05em;
+ color: inherit !important;
+}
+
+/* selected entry color */
+ul.top-nav li.menu_selected a {
+ color: #FF6A0F !important;
+}
+
+/* hover entry color */
+ul.top-nav li:hover a {
+ color: #999 !important;
+}
+
+button.navbar-toggle {
+    display: none;
+}
+
+div#proof {display:none;}
+#invoiceForm #gender { display: none !important; }
+/* #personalForm #gender { display: none !important; } */
+
+/*** adjust for smartphones etc. ***/
+
+/* remove collapsed navigation */
+#navbar {
+    height: auto !important;
+    border: none;
+}
+.collapse {
+    display: block;
+}
+
+.jumbotron-headimg {
+    position: relative;
+}
+
+.jumbotron-headimg h2 {
+    position: absolute;
+    bottom: 0.3em;
+    color: white;
+    font-size: 1.4em;
+    padding-left: 1em;
+}
+
+
+/* Schedule */
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+dt, dd {
+    margin-top: 0.5em;
+}
+
+dt {
+    width: 8%;
+    min-width: 3em;
+}
+
+dd {
+    width: 92%;
+}
+
+ time { font-weight: normal; } 
+
+/*Partner*/
+
+.partner ul li a  {
+	cursor: default;
+}
+
+.partner li:nth-child(1) a, .partner li:nth-child(2) a {
+	cursor: pointer;
+}
+
+
+.partner img[title="Crypto Works 21"] {
+        max-width: 160px;
+}
+
+.partner img[title="BBN Technologies"] {
+        max-width: 120px;
+}
+
+.partner img[title="IQC"] {
+        max-width: 240px;
+}
+
+.partner img[title="JPA"] {
+        max-width: 120px;
+}
+
+.partner img[title="QST"] {
+        max-width: 120px;
+}
+
+
+.partner li:nth-child(3)::before{
+	content: 'We gratefully acknowledge generous donations from:';
+	display:inline;
+}
+
+.partner li:nth-child(3){
+	padding-left:200px;
+	padding-right:250px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	max-height: 10px;
+}
+
+.partner img[title="We gratefully acknowledge support from:"] {
+        max-width: 0px;
+}
+
+.panel-body h2 {font-size:1.2em; font-family: inherit; font-weight: bold; margin-top: 2.5em; margin-bottom: 0.8em;  }
+.panel-body h2:first-of-type {margin-top: 0}
+.top-nav-l2 + br { display: none; }
+
+.datagrid table { border-collapse: collapse; text-align: left; width: 100%; } 
+.datagrid {font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; -webkit-border-radius: 19px; -moz-border-radius: 19px; border-radius: 19px; }
+.datagrid table td, .datagrid table th { padding: 20px 20px; }
+.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #A65B1A), color-stop(1, #7F4614) );background:-moz-linear-gradient( center top, #A65B1A 5%, #7F4614 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#A65B1A', endColorstr='#7F4614');background-color:#A65B1A; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 0px solid #BF691E; }
+
+.datagrid table thead th:first-child { border: none; }
+.datagrid table tbody td { color: #7F4614; font-size: 16px;font-weight: normal; }
+.datagrid table tbody .alt td { background: #F0E5CC; color: #7F4614; }
+.datagrid table tbody td:first-child { border-left: none; }
+.datagrid table tbody tr:last-child td { border-bottom: none; }
+
+.datagrid td:nth-child(1) { width: 16%}
+.datagrid td:nth-child(2) { width: 28%}
+.datagrid td:nth-child(3) { width: 28%}
+.datagrid td:nth-child(4) { width: 28%}
+
+
+@media (max-device-width: 50em), (max-width: 50em) {
+    .jumbotron-headimg h2 {
+        font-size: 1.0em;
+       bottom: 0.2em;
+    }
+      .partner li:nth-child(3){
+	padding-left:150px;
+	padding-right:150px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	max-height: 10px;
+    }
+}
+
+@media (max-device-width: 35em), (max-width: 35em) {
+    .jumbotron-headimg h2 {
+        font-size: 0.8em;
+        bottom: 0.0em;
+    }
+  .partner li:nth-child(3){
+	padding-left:50px;
+	padding-right:50px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	max-height: 10px;
+    }
+}
+
+
+@media (max-device-width: 25m), (max-width: 25em) {
+    .jumbotron-headimg h2 {
+        font-size: 0.0em;
+        bottom: -0.2em;
+    }
+      .partner li:nth-child(3){
+	padding-left:20px;
+	padding-right:20px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	max-height: 10px;
+    }
+
+    ul.top-nav {
+        padding: 0;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    ul.top-nav li, ul.top-nav a  {
+        display: inline !important;;
+    }
+
+    ul.top-nav li:not(:first-of-type)::before {
+        content: ' – ';
+    }
+    
+}
+/*
+     FILE ARCHIVED ON 08:40:20 Sep 13, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:09:14 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.339
+  load_resource: 62.086
+  PetaboxLoader3.resolve: 47.785
+  PetaboxLoader3.datanode: 12.943
+*/

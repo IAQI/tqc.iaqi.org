@@ -1,0 +1,176 @@
+var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opens = _____WB$wombat$assign$function_____("opens");
+var eventVar;
+$(document).ready(function () {
+  if (typeof getEventName !== "undefined" && typeof getEventUrlSecure !== "undefined") {
+    $('.file-inputs').bootstrapFileInput();
+    eventVar = getEventName();
+    eventUrlSecure = getEventUrlSecure();
+    if (eventVar != "") {
+      if ($('body').html().match(/\[\w+\]/)) {
+        $.getJSON("/api/" + eventVar + "/forms", function (dataHash) {
+          for (var i in dataHash.data) {
+            if ($('body:contains("[' + dataHash.data[i].name + ']")').length) {
+              var formDiv = "<form id='form_" + dataHash.data[i].id + "'></form>";
+
+              var re = new RegExp("\\[" + dataHash.data[i].name + "\\]", "g");
+              var replaced = $("body").html().replace(re, formDiv);
+              $("body").html(replaced);
+
+              $('#form_' + dataHash.data[i].id).append('<div class="form-group row" id="formgroup_field_email">' +
+                '<label class="control-label col-xs-6">E-Mail</label>' +
+                '<div class="col-xs-6"><input type="text" name="email" class="form-control" maxlength="254"></div>' +
+                '</div>');
+
+              console.log(eventVar);
+              $.getJSON("/api/" + eventVar + "/fields?formId=" + dataHash.data[i].id + "&order_by=parentField,weight&order_type=asc,desc", function (fieldData) {
+                if (fieldData.data[0] && fieldData.data[0].formId) {
+                  var formId = fieldData.data[0].formId;
+                  var noParent = "";
+                  for (var y in fieldData.data) {
+                    var parent_field_div = "parent_field_div_" + fieldData.data[y].id;
+                    if (fieldData.data[y].type == "headline") {
+                      $('#form_' + formId).append('<div id="' + parent_field_div + '" class="row"><div class="form-group" id="formgroup_field_' + fieldData.data[y].id + '"><div class="col-xs-12" style="margin-bottom: 10px;"><h3>' + fieldData.data[y].name + '</h3></div></div></div>');
+                    }
+                  }
+
+                  for (var y in fieldData.data) {
+                    var html = "";
+                    if (fieldData.data[y].type != "headline") {
+                      if (fieldData.data[y].type != "text") {
+                        html += '<div class="form-group row" id="formgroup_field_' + fieldData.data[y].id + '">' +
+                          '<label class="control-label col-xs-6">' +
+                          fieldData.data[y].name +
+                          '<p class="help-block">' + (fieldData.data[y].description || "") + '</p>' +
+                          '</label>' +
+                          '<div class="col-xs-6">';
+                        html += checkTypeGetField(fieldData.data[y], "");
+                        html += '</div></div>';
+                      } else {
+                        html += '<div class=col-xs-12>' + (fieldData.data[y].options || "") + '</div>';
+                      }
+                      if (fieldData.data[y].parentField) {
+                        html = html.replace("row", "row child_row");
+                        $('#formgroup_field_' + fieldData.data[y].parentField).show();
+                        $('#parent_field_div_' + fieldData.data[y].parentField).append(html);
+                        $('#formgroup_field_' + fieldData.data[y].parentField + ' .form-control').remove();
+                        $('#formgroup_field_' + fieldData.data[y].parentField).css("margin-top", "10px");
+                      } else {
+                        noParent += html;
+                      }
+                    }
+                  }
+                  $('#form_' + formId).append(noParent);
+                  $('#form_' + formId).append('<div class="col-xs-12 row"><button type="button" class="btn btn-primary" onclick="submitEventForm(' + formId + ');">Send</button></div>');
+                  $('#form_' + formId).append('<div class="col-xs-12 row" id="formStatus"></div>');
+                }
+              });
+            }
+          }
+        });
+      }
+    }
+  }
+});
+
+function checkTypeGetField(dataHash, namePrefix) {
+  var htmlReturn = "";
+
+  var mandatory = "";
+  if (dataHash.mandatory) {
+    mandatory = "mandatory";
+  }
+  if (dataHash.type == "input") {
+    htmlReturn = '<input type="text" name="' + namePrefix + dataHash.id + '" class="form-control ' + mandatory + '" maxlength="254">';
+  } else if (dataHash.type == "input-date") {
+    htmlReturn = '<input class="datepicker ' + mandatory + '" readonly="true" type="text" name="' + dataHash.id + '" maxlength="254" data-date-format="yyyy-mm-dd">';
+  } else if (dataHash.type == "textarea") {
+    htmlReturn = '<textarea class="form-control ' + mandatory + '" name="' + namePrefix + dataHash.id + '"></textarea>';
+  } else if (dataHash.type == "checkbox") {
+    htmlReturn = '<input type="checkbox" name="' + namePrefix + dataHash.id + '">';
+  } else if (dataHash.type == "multiple-choice") {
+    var fieldArray = dataHash.options.split(";")
+    for (var x = 0; x < fieldArray.length; x++) {
+      htmlReturn += '<input type="checkbox" name="' + namePrefix + dataHash.id + '" value="' + fieldArray[x] + '"> ' + fieldArray[x] + '<br>';
+    }
+  } else if (dataHash.type == "dropdown") {
+    htmlReturn = "<select name='" + namePrefix + dataHash.id + "' class='form-control " + mandatory + "'>";
+    var fieldArray = dataHash.options.split(";")
+    for (var x = 0; x < fieldArray.length; x++) {
+      htmlReturn += "<option value='" + fieldArray[x] + "'>" + fieldArray[x] + "</option>";
+    }
+    htmlReturn += "</select>";
+  } else if (dataHash.type.match(/file.*/i)) {
+    $("#uploadDialogs").append('<div id="upload_dialog_' + dataHash.id + '" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="uploadModalLabel"><div class="modal-dialog" role="document"><div class="modal-content">' +
+      '<div class="modal-header"><button type="button" class="close" data-dismiss="modal">×</button><h3>Upload</h3></div>' +
+      '<div class="modal-body"><iframe id="uploadFrame" src="' + eventUrlSecure + '/registration/upload?type=field&fieldid=' + dataHash.id + '" frameborder="0" height="250" width="99.6%"></iframe>' +
+      '</div></div></div></div>');
+    htmlReturn += '<input class="' + mandatory + '" type="hidden" name="' + namePrefix + dataHash.id + '">';
+    htmlReturn += '<button type="button" class="btn btn-default" data-toggle="modal" data-target="#upload_dialog_' + dataHash.id + '" id="upload_btn_' + dataHash.id + '" onclick="return false;">Select file</button>';
+  }
+  return htmlReturn;
+}
+
+function submitEventForm(formId) {
+  data = $("#form_" + formId).find(":input:not(.noSerialize)").serializeArray();
+  if ($("#form_" + formId + " input[name=email]").val() != "") {
+    if (checkMandatoryFormFields(formId)) {
+      $.ajax({
+        url: ("/api/" + eventVar + "/form/" + formId + "/user"),
+        type: 'POST',
+        data: data,
+        dataType: 'json',
+        success: function (response) {
+          if (response.code) {
+            $.when($("#form_" + formId).fadeOut()).done(function () {
+              $("#form_" + formId).html('<div class="alert alert-success" role="alert"><i class="fa fa-check"></i> Form information sent successfully.</div>');
+              $("#form_" + formId).fadeIn();
+            });
+          } else {
+            $.when($("#form_" + formId).fadeOut()).done(function () {
+              $("#form_" + formId).html('<div class="alert alert-danger" role="alert"><i class="fa fa-warning"></i> Error on send of the form information.</div>');
+              $("#form_" + formId).fadeIn();
+            });
+          }
+        }
+      });
+    } else {
+      $("#form_" + formId + " #formStatus").html('<div style="margin-top: 10px;" class="alert alert-danger" role="alert"><i class="fa fa-warning"></i> Please insert all mandatory additional information.</div>');
+    }
+  } else {
+    $("#form_" + formId + " #formStatus").html('<div style="margin-top: 10px;" class="alert alert-danger" role="alert"><i class="fa fa-warning"></i> Please insert your e-mail-address.</div>');
+  }
+}
+
+function checkMandatoryFormFields(formId) {
+  var fieldArray = $("#form_" + formId + " .mandatory").serializeArray();
+  for (var i = 0; i < fieldArray.length; i++) {
+    if (fieldArray[i].value == "") {
+      return false;
+    }
+  };
+  return true;
+}
+}
+
+/*
+     FILE ARCHIVED ON 08:40:26 Sep 13, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:09:09 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.609
+  load_resource: 44.427
+  PetaboxLoader3.datanode: 38.407
+*/

@@ -1,0 +1,79 @@
+.logo_tagline {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: larger;
+    color: #999;
+}
+
+.partner ul {
+    text-align: center;
+	margin: 0;
+	padding: 0;
+}
+ 
+.partner li {
+    display: inline-block;
+}
+
+.partner {
+    margin-top: 30px;
+}
+
+.partner img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#headLines table {
+    text-align: center;
+    border-collapse:separate;
+    border-spacing: 5px;
+}
+
+#headLines {
+    font-size: 18px;
+}
+
+.nav_button {
+    width: 100%;
+    text-align: center;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+#academictitle {
+    display: none;
+}
+
+#feeForm .price, #feeForm .form-control {
+    display: none;
+}
+
+.child_row {
+    margin-left: 0;
+    margin-right: 0;
+}
+/*
+     FILE ARCHIVED ON 08:40:22 Sep 13, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:08:55 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.469
+  load_resource: 120.84
+  PetaboxLoader3.resolve: 105.795
+  PetaboxLoader3.datanode: 14.099
+*/

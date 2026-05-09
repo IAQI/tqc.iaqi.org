@@ -1,0 +1,15 @@
+.DS_Store
+.claude/
+
+# Local working / scratch directories (raw wget dumps, source material)
+temp/
+simplystatic/
+tqc-conference.org/
+web.archive.org/
+websites/
+
+# Backup of pre-existing broken 2018 Wix stub, replaced by rendered Wayback snapshot
+2018_old_stub/
+
+# One-off scratch file
+tqc2023_urls.txt
