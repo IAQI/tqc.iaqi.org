@@ -1,35 +1,291 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Historic TQC conference site archive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Past TQC Conferences</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <style type="text/css">
+    /* Self-contained page — no shared TQC theme exists, so the chrome and the
+       table styling are both defined here. The table mirrors the qip.iaqi.org
+       and qcrypt.iaqi.org past-conferences pages (same blue identity). */
+    body {
+      margin:0; background:#fff; color:#222;
+      font-family:'Titillium Web', 'Titillium Maps', Arial, sans-serif;
+      font-size:16px; line-height:1.55;
+    }
+    .qc-wrap { max-width:900px; margin:0 auto; padding:40px 20px 64px; }
+    .qc-wrap h1 {
+      text-align:center; color:#555; font-weight:700; font-size:27px;
+      margin:0 0 4px; letter-spacing:.01em;
+    }
+    .qc-eyebrow {
+      text-align:center; color:#6B8FB2; font-size:12px; font-weight:700;
+      text-transform:uppercase; letter-spacing:.12em; margin:0 0 22px;
+    }
+    .qc-links { text-align:center; margin:0 0 20px; font-size:14px; }
+    .qc-links a {
+      color:#095197; font-weight:600; text-decoration:none;
+      border-bottom:1px solid rgba(9,81,151,.28);
+    }
+    .qc-links a:hover, .qc-links a:focus { border-bottom-color:#095197; }
+    .qc-sep { color:#b9c4d4; margin:0 10px; }
+    .qip-intro {
+      color:#555; font-size:14px; line-height:1.5; margin:0 auto 18px; max-width:48em; text-align:center;
+    }
+    .qip-past-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    table.qip-past {
+      border-collapse:collapse; width:100%; margin:0; font-size:14.5px; line-height:1.4;
+    }
+    table.qip-past caption {
+      position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;
+    }
+    table.qip-past thead th {
+      background:#0d4c89; color:#fff; text-align:left;
+      font-family:'Titillium Web', 'Titillium Maps', Arial, sans-serif; font-weight:600;
+      font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+      padding:9px 12px; border:0; white-space:nowrap;
+    }
+    table.qip-past tbody th,
+    table.qip-past tbody td {
+      padding:8px 12px; border-bottom:1px solid #e2e6ec; vertical-align:top; text-align:left;
+    }
+    table.qip-past tbody tr:nth-child(even) { background:#f6f8fb; }
+    table.qip-past tbody tr:hover { background:#eef3fb; }
+    .qp-ed { white-space:nowrap; font-weight:400; }
+    .qp-flag { font-size:18px; margin-right:7px; vertical-align:-1px; }
+    .qp-name { font-weight:700; color:#222; }
+    .qp-loc { color:#444; }
+    .qip-past a {
+      color:#095197; font-weight:600; text-decoration:none;
+      border-bottom:1px solid rgba(9,81,151,.28);
+    }
+    .qip-past a:hover, .qip-past a:focus { border-bottom-color:#095197; }
+    .qp-tag {
+      display:inline-block; margin-left:6px; font-size:10px; font-weight:700;
+      text-transform:uppercase; letter-spacing:.04em; color:#6B8FB2;
+      border:1px solid #cdd8e6; border-radius:3px; padding:1px 5px; vertical-align:1px;
+    }
+    .qp-copy { white-space:nowrap; }
+    .qp-none { color:#b3b3b3; }
+    .qc-note {
+      color:#555; font-size:13.5px; margin:18px 2px 0;
+    }
+    .qc-note a { color:#095197; font-weight:600; }
+    .qc-footer {
+      margin-top:40px; padding-top:16px; border-top:1px solid #e2e6ec;
+      color:#888; font-size:12.5px; text-align:center;
+    }
+    .qc-footer a { color:#6B8FB2; }
+    @media (max-width:560px){
+      table.qip-past { font-size:13px; }
+      table.qip-past thead th,
+      table.qip-past tbody th,
+      table.qip-past tbody td { padding:7px 8px; }
+      .qp-flag { font-size:15px; margin-right:5px; }
+    }
+  </style>
 </head>
 
 <body>
-<h1>Historic TQC conference websites</h1>
-The following are static archive copies of old TQC conference websites, hosted on <a href="https://github.com/IAQI/tqc.iaqi.org" target="_blank">github</a>:
-<ul>
-    <li><a href="qip2003/index.html">2003 Berkeley (QIP, precursor to TQC)</a></li>
-    <li><a href="2006/index.html">2006 Tokyo</a></li>
-    <li><a href="2007/index.html">2007 Tokyo</a></li>
-    <li><a href="2008/index.html">2008 Tokyo</a></li>
-    <li><a href="2009/index.html">2009 Waterloo</a></li>
-    <li><a href="2010/index.html">2010 Leeds</a></li>
-    <li><a href="2011/index.html">2011 Madrid</a></li>
-    <li><a href="2012/index.html">2012 Tokyo</a></li>
-    <li><a href="2013/index.html">2013 Guelph</a></li>
-    <li><a href="2014/index.html">2014 Singapore</a></li>
-    <li><a href="2015/index.html">2015 Brussels</a></li>
-    <li><a href="2016/index.html">2016 Berlin</a></li>
-    <li><a href="2017/index.html">2017 Paris</a></li>
-    <li><a href="2018/index.html">2018 Sydney</a></li>
-    <li><a href="2019/index.html">2019 Maryland</a></li>
-    <li><a href="2020/index.html">2020 Riga</a></li>
-    <li><a href="2021/index.html">2021 Riga</a></li>
-    <li><a href="2022/index.html">2022 Illinois</a></li>
-    <li><a href="2025/tqc2023/index.html">2023 Aveiro (on the 2025 site)</a></li>
-    <li><a href="2025/tqc-2024/index.html">2024 Okinawa (on the 2025 site)</a></li>
-    <li><a href="2025/index.html">2025 Bengaluru</a></li>
-</ul>
-</body>
+  <div class="qc-wrap">
 
+    <h1>Past Editions of TQC</h1>
+    <p class="qc-eyebrow">Theory of Quantum Computation, Communication &amp; Cryptography</p>
+
+    <p class="qc-links">
+      <a href="https://tqc-conference.org/" target="_blank" rel="noopener">TQC series site</a>
+      <span class="qc-sep">&middot;</span>
+      <a href="/2025/tqc-charter/" target="_blank" rel="noopener">TQC charter</a>
+    </p>
+
+    <p class="qip-intro">Every TQC edition since 2006, plus the 2003 Berkeley workshop that seeded the series. Each links to the organisers&rsquo; original website &mdash; or a Web&nbsp;Archive snapshot when that site has gone offline &mdash; alongside the static copy mirrored here on IAQI.</p>
+
+    <div class="qip-past-wrap">
+    <table class="qip-past">
+      <caption>Past editions of the TQC conference, with links to the original conference website and to the local IAQI static copy.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Edition</th>
+          <th scope="col">Location</th>
+          <th scope="col">Host</th>
+          <th scope="col">Original website</th>
+          <th scope="col">IAQI copy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2027</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127760;</span>To be announced</td>
+          <td class="qp-host">Open call &mdash; proposals due Feb 2026</td>
+          <td class="qp-orig"><a href="https://tqc-conference.org/" target="_blank" rel="noopener">tqc-conference.org</a></td>
+          <td class="qp-copy qp-none" title="No static copy available">—</td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2026</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127464;&#127462;</span>Sherbrooke, Canada</td>
+          <td class="qp-host">Université de Sherbrooke</td>
+          <td class="qp-orig"><a href="https://tqc-conference.org/" target="_blank" rel="noopener">tqc-conference.org</a></td>
+          <td class="qp-copy qp-none" title="No static copy available">—</td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2025</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127470;&#127475;</span>Bengaluru, India</td>
+          <td class="qp-host">IISc Bengaluru</td>
+          <td class="qp-orig"><a href="https://tqc-conference.org/" target="_blank" rel="noopener">tqc-conference.org</a></td>
+          <td class="qp-copy"><a href="/2025/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2024</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127471;&#127477;</span>Okinawa, Japan</td>
+          <td class="qp-host">OIST</td>
+          <td class="qp-orig"><a href="https://tqc-conference.org/tqc-2024/" target="_blank" rel="noopener">tqc-conference.org/tqc-2024</a></td>
+          <td class="qp-copy"><a href="/2025/tqc-2024/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2023</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127477;&#127481;</span>Aveiro, Portugal</td>
+          <td class="qp-host">University of Aveiro</td>
+          <td class="qp-orig"><a href="https://tqc-conference.org/tqc2023/" target="_blank" rel="noopener">tqc-conference.org/tqc2023</a></td>
+          <td class="qp-copy"><a href="/2025/tqc2023/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2022</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127482;&#127480;</span>Urbana&ndash;Champaign, IL, USA</td>
+          <td class="qp-host">UIUC (IQUIST)</td>
+          <td class="qp-orig"><a href="https://tqc2022-conference.iquist.illinois.edu/" target="_blank" rel="noopener">iquist.illinois.edu</a></td>
+          <td class="qp-copy"><a href="/2022/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2021</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127473;&#127483;</span>Riga, Latvia [online]</td>
+          <td class="qp-host">University of Latvia</td>
+          <td class="qp-orig"><a href="https://tqc2021.lu.lv/" target="_blank" rel="noopener">tqc2021.lu.lv</a></td>
+          <td class="qp-copy"><a href="/2021/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2020</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127473;&#127483;</span>Riga, Latvia [online]</td>
+          <td class="qp-host">University of Latvia</td>
+          <td class="qp-orig"><a href="https://tqc2020.lu.lv/" target="_blank" rel="noopener">tqc2020.lu.lv</a></td>
+          <td class="qp-copy"><a href="/2020/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2019</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127482;&#127480;</span>College Park, MD, USA</td>
+          <td class="qp-host">QuICS, U Maryland</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20191206160410/https://www.tqcconference.org/" target="_blank" rel="noopener">tqcconference.org</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2019/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2018</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127462;&#127482;</span>Sydney, Australia</td>
+          <td class="qp-host">UTS</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20180903122021/https://www.tqc2018.org/" target="_blank" rel="noopener">tqc2018.org</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2018/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2017</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127467;&#127479;</span>Paris, France</td>
+          <td class="qp-host">UPMC / LIP6 (PCQC)</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20180106080206/http://tqc2017.lip6.fr:80/" target="_blank" rel="noopener">tqc2017.lip6.fr</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2017/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2016</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127465;&#127466;</span>Berlin, Germany</td>
+          <td class="qp-host">Freie Universität Berlin</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20221129192232/https://tqc2016.physik.fu-berlin.de/" target="_blank" rel="noopener">tqc2016.physik.fu-berlin.de</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2016/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2015</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127463;&#127466;</span>Brussels, Belgium</td>
+          <td class="qp-host">Université libre de Bruxelles</td>
+          <td class="qp-orig"><a href="http://tqc2015.ulb.ac.be/" target="_blank" rel="noopener">tqc2015.ulb.ac.be</a></td>
+          <td class="qp-copy"><a href="/2015/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2014</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127480;&#127468;</span>Singapore</td>
+          <td class="qp-host">CQT, NUS</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20150130133931/http://tqc.quantumlah.org:80/" target="_blank" rel="noopener">tqc.quantumlah.org</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2014/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2013</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127464;&#127462;</span>Guelph, ON, Canada</td>
+          <td class="qp-host">University of Guelph</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20131210100106/http://www.uoguelph.ca:80/quigs/tqc2013/" target="_blank" rel="noopener">uoguelph.ca/quigs/tqc2013</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2013/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2012</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127471;&#127477;</span>Tokyo, Japan</td>
+          <td class="qp-host">University of Tokyo</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20130809052210/http://www.eve.phys.s.u-tokyo.ac.jp:80/tqc2012/" target="_blank" rel="noopener">eve.phys.s.u-tokyo.ac.jp/tqc2012</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2012/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2011</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127466;&#127480;</span>Madrid, Spain</td>
+          <td class="qp-host">Univ. Politécnica de Madrid</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20110817022324/http://gcc.ls.fi.upm.es/tqc2011/" target="_blank" rel="noopener">gcc.ls.fi.upm.es/tqc2011</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2011/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2010</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127468;&#127463;</span>Leeds, UK</td>
+          <td class="qp-host">University of Leeds</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20101124142004/http://tqc2010.leeds.ac.uk:80/" target="_blank" rel="noopener">tqc2010.leeds.ac.uk</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2010/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2009</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127464;&#127462;</span>Waterloo, ON, Canada</td>
+          <td class="qp-host">IQC, U Waterloo</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20190716005133/https://uwaterloo.ca/institute-for-quantum-computing/node/1681" target="_blank" rel="noopener">uwaterloo.ca/iqc</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2009/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2008</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127471;&#127477;</span>Tokyo, Japan</td>
+          <td class="qp-host">University of Tokyo / NTT</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20150907040948/http://www.brl.ntt.co.jp:80/tqc/2008/" target="_blank" rel="noopener">brl.ntt.co.jp/tqc/2008</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2008/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2007</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127471;&#127477;</span>Tokyo, Japan</td>
+          <td class="qp-host">NTT / NAIST</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20170629061934/http://www.kecl.ntt.co.jp:80/tqc/2007/index.html" target="_blank" rel="noopener">kecl.ntt.co.jp/tqc/2007</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2007/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">TQC 2006</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127471;&#127477;</span>Tokyo, Japan</td>
+          <td class="qp-host">NTT CS Labs</td>
+          <td class="qp-orig"><a href="http://web.archive.org/web/20170629061833/http://www.kecl.ntt.co.jp:80/tqc/2006/index.html" target="_blank" rel="noopener">kecl.ntt.co.jp/tqc/2006</a> <span class="qp-tag" title="Original site offline — Web Archive snapshot">archived</span></td>
+          <td class="qp-copy"><a href="/2006/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+        <tr>
+          <th scope="row" class="qp-ed"><span class="qp-name">QIP 2003</span></th>
+          <td class="qp-loc"><span class="qp-flag">&#127482;&#127480;</span>Berkeley, CA, USA</td>
+          <td class="qp-host">MSRI &middot; precursor to TQC</td>
+          <td class="qp-orig"><a href="https://www.slmath.org/workshops/204" target="_blank" rel="noopener">slmath.org</a></td>
+          <td class="qp-copy"><a href="/qip2003/" target="_blank" rel="noopener">static copy</a></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p class="qc-note">TQC is an ongoing annual series &mdash; the current edition lives at <a href="https://tqc-conference.org/" target="_blank" rel="noopener">tqc-conference.org</a>. Editions through 2025 are mirrored here on IAQI.</p>
+
+    <div class="qc-footer">
+      Static archive of past TQC conference websites, maintained by IAQI &mdash;
+      <a href="https://github.com/IAQI/tqc.iaqi.org" target="_blank" rel="noopener">source on GitHub</a>.
+    </div>
+
+  </div>
+</body>
 </html>
