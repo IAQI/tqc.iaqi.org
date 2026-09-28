@@ -1,0 +1,49 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-bottom: 20px;
+}
+
+.panel {
+    padding: 10px;
+}
+
+.jumbotron-headimg {
+  text-align: center;
+  overflow: hidden;
+}
+
+.jumbotron-headimg img {
+  width: 100%;
+}
+
+.top-nav li:hover{
+  background-color: #555;
+}
+
+.top-nav .menu_selected, .top-nav-l2 .menu_selected {
+  background-color: #555;
+}
+
+.top-nav-l2 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.navbar-inverse {
+  margin-bottom: 0px;
+}
+/*
+     FILE ARCHIVED ON 08:40:20 Sep 13, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:09:18 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 20.682
+  load_resource: 35.224
+  PetaboxLoader3.resolve: 30.447
+  PetaboxLoader3.datanode: 3.231
+*/

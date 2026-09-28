@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD html 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TQC 2014 Program</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="author" content="Ethan Lim"/>
+<meta name="description" content="The official website of TQC 2014. TQC 2014 is an international workshop on quantum computation, quantum communication and quantum cryptography processing to be held in Singapore in May 2014." />
+<meta name="keywords" content="TQC, TQC 2014, Conference on the Theory of Quantum Computation communication and cryptography, Quantum Computation, Quantum Communication, Quantum Cryptography, Centre for Quantum Technologies, CQT, Singapore, Quantum Singapore, Research Centre of Excellence, NUS, Quantum Physics, Quantum Information, Workshop" />
+<link rel="SHORTCUT ICON" href="http://www.quantumlah.org/img/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="img/file.css?v=1.1">
+</head>
+<body>
+<table align="center" class="maintable">
+<tr>
+<td>&nbsp;</td>
+	<td id="logo"><img src="img/banner.png" border="0" usemap="#logoMap" id="logo"></td>
+	
+	<td>&nbsp;</td>
+    </tr>
+    
+<tr>
+	<td>&nbsp;</td>
+	<td id="content">
+    	<table width="980px" align="center">
+			<tr>
+
+
+<td width="230" rowspan="2" id="menu_tbl">
+<a href="index.html" id="menu_tbl">Information</a><br>
+<!--
+<a href="#" id="menu_tbl">Submission</a><br>
+<a href="#" id="menu_tbl">Registration</a><br>    
+<a href="#" id="menu_tbl">Committees</a><br> 
+<a href="http://beyondiid.quantumlah.org/" id="menu_tbl">Beyondiid 2014</a><br>
+
+-->
+<a href="committees.html" id="menu_tbl">Committees</a><br> 
+<a href="submissions.html" id="menu_tbl">Submissions</a><br>
+<a href="program.html" id="menu_tbl">Program</a><br>    
+
+<a href="registration/index.html" id="menu_tbl">Registration</a><br>
+<a href="accommodation.html" id="menu_tbl">Accommodation	</a><br>
+<a href="conferencevenue.html" id="menu_tbl">Conference Venue</a><br>
+
+
+<a href="traveltips.html" id="menu_tbl">Travel Tips</a><br>
+
+
+</td>
+
+
+<td width="85%" id="content_tbl">
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8" />
+	<title>TQC 2014 - Scientific Program</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
+	<script src="jquery.tools.min.js" type="text/javascript"></script>
+	<style type="text/css">
+		.talk-abstract { display: none; padding-left: 10px; border-left: #c93131 dotted 1px; text-align: justify; clear: left;}
+		.talk-title { font-weight: bold; text-shadow: 0px 1px 1px #ccc;}
+		.talk-authors {text-shadow: 0px 1px 1px #ddd;}
+		.contributed { padding: 0; margin: 0; list-style-type: none; }
+		ul.contributed li {margin: 20px 0;}
+		.abstract-show {cursor: pointer; color: #c93131; display: block; float: left; width: 79px;}
+		.abstract-show:hover {color: #000;}
+		.abstract-show .text {text-decoration: underline;}
+		.abstract-show-dummy {display: block; float: left; width: 79px;}
+		.math { font-style: italic;}
+		.speaker {text-decoration: underline;}
+		.program {width: 100%; border-collapse: collapse; border-spacing: 0;}
+		.talk{border-bottom: dotted 1px #ddd;}
+		.program td {padding: 5px 10px;}
+		.event {background-color: #fff5eb; border-bottom: solid 1px #fff;}
+		.time {width: 15%; vertical-align: top; padding-left: 100px;}
+		.extabstract2 {display: block; float: left; width: 149px;}
+		.slides {display: block; float: left; width: 79px;}
+		.video {display: block; float: left; width: 57px;}
+		.slides, .video, .extabstract2 {text-decoration: none;}
+		.slides .text, .video .text, .extabstract2 .text {text-decoration: underline;}
+		.tooltip {
+			display: none;
+			background: rgba(80,80,80,20); 
+			height: 64px; width: 180px; 
+			padding: 20px; border: white solid 2px; 
+			-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  			-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  			box-shadow:         3px 3px 5px 6px #ccc;
+  		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(
+			function () {
+			
+				// Getting around a jQuery bug that does not always compute the size of a 
+				// hidden element correctly, and make buggy animations
+				// Let's do it manually.
+				$(".talk-abstract").show().each( function() {
+					$(this).css("height", $(this).height());
+				}).hide();
+				
+				// The jQuery magic
+				$(".abstract-show").click( function() {
+					abstr = $(this).siblings(".talk-abstract");
+					if (abstr.css('display') == 'none') {
+						abstr.show("drop", { direction: "left" }, "fast");
+						$(this).children(".imgabstract").attr('src', 'images/abstract-up.png');
+					
+					} else {
+						abstr.hide("drop", { direction: "right" }, "fast");
+						$(this).children(".imgabstract").attr('src', 'images/abstract-down.png');
+					}
+				});
+				
+				// When someone click on the abstract link on the menu, we need to trigger a click on the correct element.
+				// This is stored in a data-show HTML5 attribute.
+				$(".trigger-abstract-show").click( function() {
+					$($(this).attr("data-show")).trigger("click");
+				});
+				
+				// Tooltip when several formats are available for the slides
+				$(".download_choice").tooltip();
+			}
+		) 
+	</script>
+</head>
+<body>
+	
+			<div id="content" style="text-align: left;">
+
+<h3 id="content"><strong>
+Program</strong> </h3>
+	
+	
+					
+	<table class ="program">
+	<tbody>
+	
+	<tr class="event">
+	<td class="time"><b>21 May, Wed</b></td>
+	<td>
+	<span class="talk-title"></span>
+
+	</td>
+	</tr>
+	
+	<tr class="event">
+	<td class="time">13:30hr</td>
+	<td>
+	<span class="talk-title">Registration</span>
+
+	</td>
+	</tr>
+	
+	<tr class="talk">
+	<td class="time">14:00hr</td>
+	<td id=Yaoyun>
+	<b>Yaoyun Shi (University of Michigan, Ann Arbor) - Invited Talk<br /> </b>
+	<font size='3'>Physical Randomness Extractors: Generating Random Numbers with Minimal Assumptions 
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+	How can one be certain that the output of an alleged random number generator is indeed
+random? This question is important not only for the security and the eciency of modern day
+information processing, but also for understanding how fundamentally unpredictable events are
+possible in Nature. Practical random number generators have often been found to be insecure,
+for the failure of the assumptions that they rely on. The mathematical theory of randomness
+extraction from weak randomness sources requires that two or more independent sources for
+ensuring security. However, the independence assumption is impossible to test and hard to
+guarantee in reality.
+Recent works on untrusted-device randomness generating protocols provide a new approach
+for circumventing the two-independent-source requirement and minimizing assumptions. Such
+a protocol is a deterministic algorithm with classical input and interacting classically with non-
+interacting quantum devices whose inner-workings may be imperfect or evan malicious. In
+sharp contrast to the classical theory, the security of untrusted-device protocols is based on the
+validity of physical theories.
+Here we formulate precisely a model of randomness extraction from untrusted quantum
+devices, and construct the rst such \physical extractor" that requires only a single and ar-
+bitrarily week classical source. Our construction is robust against a constant level of device
+imperfection, can reach close to optimal security parameter, and is ecient for major cases.
+In conjunction with the robust untrusted-device protocol of Miller and Shi [arXiv:1402.0489],
+it leads to a robust protocol that starts with a single and arbitrarily weak classical source,
+produces an arbitrarily long random output, secure with a near-optimal parameter and against
+an all-powerful quantum adversary.
+Our result also implies a stronger \dichotomy" statement that unless the world is deter-
+ministic, we can experimentally create inherently random events and be condent of their
+unpredictability. This provides a practical and strongest known method for mitigating the
+Freedom-of-Choice loophole in Bell test experiments.
+A main technical contribution is our \Equivalence Lemma", which states that the perfor-
+mance of a physical extractor remains unchanged when its globally uniformly random input is
+replaced by an input uniform only to the devices. This principle for the secure composition of
+untrusted-device protocols has found several other applications.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time">14:45hr</td>
+	<td id=Matej>
+	Jan Bouda, Marcin Pawlowski, <b>Matej Pivoluska(Masaryk Universuty, Brno), </b>and Martin Plesch <br /> 
+	<font size='3'>Robust Device-Independent Randomness Extraction for Arbitrarily Weak Min-Entropy Source
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+In this paper we show how to extract a single random bit with an arbitrarily low bias using a single and arbitrarily weak min-entropy source ($(n,2)$ source for an arbitrary $n$), in a device independent setting. To do this we need the number of devices polynomial in $n$. Our solution is robust, it works with devices that malfunction with probability dropping polynomially in $n$.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="event">
+	<td class="time">15:15hr</td>
+	<td>
+	<span class="talk-title">Coffee/Tea Break</span>
+</td>
+</tr>
+	
+
+<tr class="talk">
+	<td class="time">15:45hr</td>
+	<td id= Jean >
+	<b>Jean-Daniel Bancal (Center for Quantum Technologies) </b>Lana Sheridan and Valerio Scarani<br />
+	<font size='3'>More Randomness from the Same Data 
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+Correlations that cannot be reproduced with local variables certify the generation of private randomness. Usually, the violation of a Bell inequality is used to quantify the amount of randomness produced. Here, we show how private randomness generated during a Bell test can be directly quantified from the observed correlations, without the need to process these data into an inequality. The frequency with which the different measurement settings are used during the Bell test can also be taken into account. This improved analysis turns out to be very relevant for Bell test performed with a finite collection efficiency. In particular, applying our technique to the data of a recent experiment [Christensen et al., Phys. Rev. Lett. 111, 130406 (2013)], we show that about twice as much randomness as previously reported can be potentially extracted from this setup.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 16:15hr</td>
+	<td id= Claude >
+	Gilles Brassard, Luc Devroye and<b> Claude Gravel (Université de Montréal) <br /> </b>
+	<font size='3'> Exact Classical Simulation of the GHZ Distribution
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+John Bell has shown that the correlations entailed by quantum mechanics cannot be reproduced by a classical process involving non-communicating parties. But can they be simulated with the help of bounded communication? This problem has been studied for more than twenty years and it is now well understood in the case of bipartite entanglement. However, the issue was still widely open for multipartite entanglement, even for the simplest case, which is the tripartite Greenberger-Horne-Zeilinger (GHZ) state. We give an exact simulation of arbitrary independent von Neumann measurements on general n-partite GHZ states. Our protocol requires O(n^2) bits of expected communication between the parties, and O(n log n) expected time is sufficient to carry it out in parallel. Furthermore, we need only an expectation of O(n) independent unbiased random bits, with no need for the generation of continuous real random variables nor prior shared random variables. In the case of equatorial measurements, we improve earlier results with a protocol that needs only O(n log n) bits of communication and O(log^2 n) parallel time. At the cost of a slight increase in the number of bits communicated, these tasks can be accomplished with a constant expected number of rounds.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 16:45hr</td>
+	<td id= David >
+	Toby Cubitt, Laura Mancinska,<b>  David Roberson (Nanyang Technological University)  </b> Simone Severini, Dan Stahlke and Andreas Winter<br />
+	<font size='3'> Bounds on Entanglement Assisted Source-channel Coding via the Lovasz Theta Number and its Variants
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+We study zero-error entanglement assisted source-channel coding (communication in the presence of side information). Adapting a technique of Beigi, we show that such coding requires existence of a set of vectors satisfying orthogonality conditions related to suitably defined graphs $G$ and $H$. Such vectors exist if and only if $\vartheta(\Gc) \le \vartheta(\Hc)$ where $\vartheta$ represents the Lov{\'a}sz number. We also obtain similar inequalities for the related Schrijver $\thm$ and Szegedy $\thp$ numbers.
+
+These inequalities reproduce several known bounds and also lead to new results. We provide a lower bound on the entanglement assisted cost rate. We show that the entanglement assisted independence number is bounded by the Schrijver number: $\alpha^*(G) \le \thm(G)$. Therefore, we are able to disprove the conjecture that the one-shot entanglement-assisted zero-error capacity is equal to the integer part of the Lov{\'a}sz number. Beigi introduced a quantity $\beta$ as an upper bound on $\alpha^*$ and posed the question of whether $\beta(G) = \lfloor \vartheta(G) \rfloor$. We answer this in the affirmative and show that a related quantity is equal to $\lceil \vartheta(G) \rceil$. We show that a quantity $\chivect(G)$ recently introduced in the context of Tsirelson's conjecture is equal to $\lceil \vartheta^+(\Gc) \rceil$.
+</p>
+</div>
+</td>
+</tr>
+
+
+
+
+<br>
+				
+	
+	<tr class="event">
+	<td class="time">17:15hr</td>
+	<td>
+	<span class="talk-title">End of the day</span>
+	</td>
+	</tr>
+	
+	</tbody>
+	</table>
+	
+	<br><br>
+
+	<table class ="program">
+	<tbody>
+	
+	<tr class="event">
+	<td class="time"><b>22 May, Thurs</b></td>
+	<td>
+</td>
+</tr>
+	
+
+<tr class="talk">
+	<td class="time"> 09:00hr</td>
+	<td id= Christian >
+	Harry Buhrman, Serge Fehr and <b> Christian Schaffner (University of Amsterdam / CWI) - Highlighted Talk<br /> </b>
+	<font size='3'> On the Parallel Repetition of Multi-Player Games: The No-Signaling Case
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+We consider the natural extension of two-player nonlocal games to an arbitrary number of players. An important question for such nonlocal games is their behavior under parallel repetition. For two-player nonlocal games, it is known that both the classical and the non-signaling value of any game converges to zero exponentially fast under parallel repetition, given that the game is non-trivial to start with (i.e., has classical/non-signaling value $<1$). Very recent results~\cite{DSV13arxiv,CS13arxiv,JPY13arxiv} suggest that the same is true for the quantum value of a two-player game under parallel repetition. For nonlocal games with three or more players, very little is known up to present on their behavior under parallel repetition; this is true for the classical, the quantum and the non-signaling value. 
+
+In this work, we show a parallel repetition theorem for the non-signaling value of a large class of multi-player games, for an arbitrary number of players.
+Our result applies to all multi-player games for which all possible combinations of questions have positive probability; this class
+in particular includes all free games, in which the questions to the players are chosen independently. Specifically, we prove that if the original game has a non-signaling value $v_\ns(\game) < 1$, then the non-signaling value of the $n$-fold parallel repetition is exponentially small in $n$. Stronger than that, we prove that the probability of winning more than $(v_\ns(\game) + \delta) \cdot n$ parallel repetitions is exponentially small in $n$ (for any~$\delta > 0$). 
+
+Our parallel repetition theorem for multi-player games is weaker than the known parallel repetition results for two-player games in that the rate at which the non-signaling value of the game decreases not only depends on the non-signaling value of the original game (and the number of possible responses), but on the complete description of the game. 
+Nevertheless, we feel that our result is a first step towards a better understanding of the parallel repetition of nonlocal games with more than two players.
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr class="talk">
+	<td class="time"> 09:45hr</td>
+	<td id= Alex >
+	<b> Alex Monras Blasi (Universitat Autònoma de Barcelona)  </b>and Andreas Winter<br />
+	<font size='3'> Quantum learning of classical stochastic processes
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+Machine learning consists on the problem of inferring the latent variables of a system and their causal relations with the observed behavior. A paradigmatic instance of machine learning refers to the problem of inferring the Hidden Markov Model underlying a given stochastic process. This is known as the positive realization problem (PRP) and constitutes a central problem in machine learning. The PRP and its solutions have far-reaching consequences in many areas of systems and control theory, and is nowadays an important piece in the broad field of positive systems theory.
+
+We consider the scenario where the latent variables are allowed to be quantum states, and the system dynamics is constrained only by physical transformations on the quantum system. The observable dynamics of the system is then described by a quantum instrument, and the quantum machine learning amounts to infer the quantum instrument at hand, only from the iterative application of said instrument.
+
+We take as a starting point the theory of quasi-realizations, whence a description of the dynamics of the process is given in terms of linear maps acting on state vectors and probabilities are computed by linear functionals. This description is however, devoid from any stochastic or quantum mechanical interpretation, as said maps fail to satisfy any positivity conditions. The Completely-Positive realization problem then consists in determining whether an equivalent quantum mechanical description of the same process exists.
+
+We generalize some key results of stochastic realization theory, and show that the problem has deep connections with operator systems theory, giving possible insight to the lifting problem in quotient operator systems. Our results have potential applications in quantum machine learning, 
+device-independent characterization and reverse-engineering of stochastic processes and quantum processors, and more generally, of dynamical processes with quantum memory.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="event">
+	<td class="time">10:15hr</td>
+	<td>
+	<span class="talk-title">Coffee/Tea Break</span>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 10:45hr</td>
+	<td id= Theodoros >
+	<b> Theodoros Kapourniotis(School of Informatics, University of Edinburgh, UK)  </b>,Elham Kashefi and Animesh Datta<br />
+	<font size='3'> Blindness and verification of quantum computation with one pure qubit
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+While building a universal quantum computer remains challenging, devices of restricted power such as the so-called one pure qubit model have attracted considerable attention. An important step in the construction of these limited quantum computational devices is the understanding of whether the verification of the computation within these models could be also performed in the restricted scheme. Encoding via blindness (a cryptographic protocol for delegated computing) has proven successful for the verification of universal quantum computation with a restricted verifier. In this paper, we present the adaptation of this approach to the one pure qubit model, and present the first feasible scheme for the verification of delegated one pure qubit model of quantum computing.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 11:15hr</td>
+	<td id= Stacey >
+	Gorjan Alagic, Stephen Jordan and <b> Stacey Jeffery(IQC) <br /> </b>
+	<font size='3'> Circuit obfuscation using braids
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+An obfuscator is an algorithm that translates circuits into functionally-equivalent similarly-sized circuits that are hard to understand. Efficient obfuscators would have many applications in cryptography. Until recently, theoretical progress has mainly been limited to no-go results. Recent works have proposed the first efficient obfuscation algorithms for classical logic circuits, based on a notion of indistinguishability against polynomial-time adversaries. In this work, we propose
+a new notion of obfuscation, which we call partial-indistinguishability. This notion is based on computationally universal groups with efficiently computable normal forms, and appears to be incomparable with existing definitions. We describe universal gate sets for both classical and quantum computation, in which our definition of obfuscation can be met by polynomial-time algorithms. We also discuss some potential applications to testing quantum computers. We stress that the cryptographic security of these obfuscators, especially when composed with translation from other gate sets, remains an open question.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="event">
+	<td class="time">11:45hr</td>
+	<td>
+	<span class="talk-title">Lunch break</span>
+</td>
+</tr>
+
+
+<tr class="talk">
+	<td class="time"> 13:30hr</td>
+	<td id= Laura >
+	<b> Laura Mančinska (Centre for Quantum Technologies, National University of Singapore)</b>and David Roberson <b>-Highlighted Talk </b><br />
+	<font size='3'> Graph Homomorphisms for Quantum Players
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+A homomorphism from a graph $X$ to a graph $Y$ is an adjacency preserving mapping $f:V(X) \rightarrow V(Y)$. We consider a nonlocal game in which Alice and Bob are trying to convince a verifier with certainty that a graph $X$ admits a homomorphism to $Y$. This is a generalization of the well-studied graph coloring game. Via systematic study of quantum homomorphisms we prove new results for graph coloring. Most importantly, we show that the Lov\'{a}sz theta number of the complement lower bounds the quantum chromatic number, which itself is not known to be computable.
+We also show that other quantum graph parameters, such as quantum independence number, can differ from their classical counterparts. Finally, we show that quantum homomorphisms closely relate to zero-error channel capacity. In particular, we use quantum homomorphisms to construct graphs for which entanglement-assistance increases their one-shot zero-error capacity.
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr class="talk">
+	<td class="time"> 14:15</td>
+	<td id= Giannicola >
+	André Chailloux, Laura Mancinska, <b> Giannicola Scarpa(Universitat Autònoma de Barcelona)</b>  and Simone Severini <br />
+	<font size='3'> Graph-theoretical Bounds on the Entangled Value of Non-local Games 
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+We introduce a novel technique to give bounds to the entangled value of non-local games. The technique is based on a class of graphs used by Cabello, Severini and Winter in 2010. The lower bound uses the famous Lovasz theta number and is efficiently computable; the upper one is based on the quantum independence number, which is a quantity used in the study of entanglement-assisted channel capacities and graph homomorphism games.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="event">
+	<td class="time">14:45hr</td>
+	<td>
+	<span class="talk-title">Coffee/Tea Break</span>
+</td>
+</tr>
+
+
+
+<tr class="talk">
+	<td class="time"> 15:15hr</td>
+	<td id= Wim>
+	<b> Wim Van Dam(UC Santa Barbara) </b>and Siladitya Dey<br /> 
+	<font size='3'> Hidden Subgroup Quantum Algorithms for a Class of Semi-Direct Product Groups
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+A quantum algorithm for the Hidden Subgroup Problem over the group $\ZZ/p^r\ZZ \semidirect \ZZ/q^s\ZZ$ is presented. This algorithm, which for certain parameters of the group qualifies as `efficient', generalizes prior work on related semi-direct product groups.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 15:45hr</td>
+	<td id= Gorjan >
+	<b> Gorjan Alagic(Caltech)</b>, Stephen Jordan and Aniruddha Bapat<br />
+	<font size='3'> Classical simulation of Yang-Baxter gates
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+A unitary operator that satisfies the constant Yang-Baxter equation immediately yields a unitary representation of the braid group B_n for every n > 1. If we view such an operator as a quantum-computational gate, then topological braiding corresponds to a quantum circuit. A basic question is when such a representation affords universal quantum computation. In this work, we show how to classically simulate these circuits when the gate in question belongs to certain families of
+solutions to the Yang-Baxter equation. These include all of the qubit (i.e., d = 2) solutions, and some simple families that include solutions for arbitrary d > 1. Our main tool is a probabilistic classical algorithm for efficient simulation of a more general class of quantum circuits. This algorithm may be of use outside the present setting.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 16:15hr</td>
+	<td id= Poster>
+	<b> <a href="postersession.html">Poster Session </a><br /> </b>
+	<font size='3'> 
+</font><br />
+	
+</td>
+</tr>
+<tr class="event">
+	<td class="time">18:30hr</td>
+	<td>
+	<span class="talk-title">End of the day</span>
+	</td>
+	</tr>
+	
+	<tr class="event">
+	<td class="time">19:30hr</td>
+	<td>
+	<span class="talk-title">Conference BBQ @ Kent Vale</span>
+	<br> Details would be sent to participants
+	</td>
+	</tr>
+	
+	</tbody>
+	</table>
+
+	
+	<table class ="program">
+	<tbody>
+	<br><br>
+		<tr class="event">
+	<td class="time"><b>23 May, Fri</b></td>
+	<td>
+	<span class="talk-title"></span>
+</td>
+</tr>
+	
+	<tr class="talk">
+	<td class="time"> 09:00hr</td>
+	<td id= Vittorio >
+	<b> Vittorio Giovannetti (NEST, Scuola Normale Superiore and Istituto Nanoscienze-CNR, Pisa, Italy) - Invited Talk<br /> </b>
+	<font size='3'> Gaussian Optimization Conjectures: new results and proofs
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+Optical channels, such as .bers or free-space links, are ubiquitous in today’s telecommunication networks. They rely on the electromagnetic .eld associated with photons to carry information from one point to another in space [1]. As a re­
+sult, a complete physical model of these channels must neces­sarily take quantum effects into account in order to determine their ultimate performances. Speci.cally, Gaussian photonic (or bosonic) quantum channels have been extensively studied over the past decades given their importance for practical pur­poses [2]. In spite of this, a longstanding conjecture on the op­
+timality of Gaussian encodings has yet prevented .nding their communication capacity. In my talk I will report the solution of this conjecture by proving that the vacuum state achieves the minimum output entropy of a generic Gaussian bosonic channel [3]. This establishes the ultimate achievable bit rate under an energy constraint, as well as the long awaited proof that the single-letter classical capacity of these channels is ad­ditive [4]. Beyond capacities, it also has broad consequences in quantum information sciences allowing one to compute the entanglement of formation [5] for some non-symmetric Gaus­
+sian states. I will also present a proof of the stronger version of the conjecture [6] which establish the optimality of Gaus­
+sian encoding in terms of majorization. Finally I will brie.y mention on a generalization [7] of the entropy power inequal­
+ity [8]. <br>
+[1] C. M. Caves and P. B. Drummond, Quantum limits on bosonic communication rates, Rev. Mod. Phys. 66, 481 (1994). 
+<br>[2] A. S. Holevo and R. F. Werner, Evaluating capacities of bosonic Gaussian channels, Phys. Rev. A 63, 032312 (2001). 
+<br>[3] V. 	Giovannetti, A. S. Holevo, and R. Garc´ia-Patr´on, arXiv:1312.2251 [quant-ph]. 
+<br>[4] V. Giovannetti, R. Garc´ia-Patr´
+on, N. J. Cerf, and A. S. Holevo, arXiv:1312.6225 [quant-ph]. 
+<br>[5] C. H. Bennett, D. P. DiVincenzo, J. A. Smolin, and W. K. Woot­ters, Mixed-state entanglement and quantum error correction Phys. Rev. A 54, 3824 (1996). 
+<br>[6] A. Mari, V. 	Giovannetti, and A. S. Holevo, arXiv:1312.3545 [quant-ph]. 
+<br>[7] G. De Palma, A. Mari, and V. 	Giovannetti, arXiv:1402.0404 [quant-ph]. 
+<br>[8] R. K¨onig and G. Smith, arXiv:1205.3409. 
+<br>
+</p>
+</div>
+</td>
+</tr>
+
+	<tr class="talk">
+	<td class="time"> 09:45hr</td>
+	<td id= Milan >
+	<b> Milan Mosonyi(Universitat Autonoma de Barcelona) <br /> </b>
+	<font size='3'> Convexity properties of the quantum Renyi divergences, with applications to composite coding problems
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+We show two-sided bounds between the traditional quantum Renyi divergences and the new notion of Renyi divergences introduced recently in Muller-Lennert, Dupuis, Szehr, Fehr and Tomamichel, J. Math. Phys. 54, 122203 (2013), and Wilde, Winter, Yang, arXiv:1306.1586. The bounds imply that the two versions can be used interchangeably near alpha=1, and hence one can benefit from the best properties of both when proving coding theorems in the case of asymptotically vanishing error. We illustrate this by giving short and simple proofs for the achievability parts of Stein's lemma with composite null-hypothesis, universal source compression, and the classical capacity of compound classical-quantum channels.
+</p>
+</div>
+</td>
+</tr>
+
+	
+	<tr class="event">
+	<td class="time">10:15hr</td>
+	<td>
+	<span class="talk-title">Coffee/Tea Break</span>
+	</td>
+	</tr>
+	
+<tr class="talk">
+	<td class="time"> 10:45hr</td>
+	<td id= Mark >
+	<b> Mark Wilde(Louisiana State University) </b>and Andreas Winter<br /> 
+	<font size='3'> Strong converse for the quantum capacity of the erasure channel for almost all codes
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+A strong converse theorem for channel capacity establishes that the error probability in any communication scheme for a given channel necessarily tends to one if the rate of communication exceeds the channel's capacity. Establishing
+such a theorem for the quantum capacity of degradable channels has been an elusive task, with the strongest progress so far being a so-called ``pretty strong converse.'' In this work, Morgan and Winter proved that the quantum error of any quantum communication scheme for a given degradable channel converges to a value larger than $1/\sqrt{2}$ in the limit of many channel uses if the quantum rate of communication exceeds the channel's quantum capacity. The present paper establishes a theorem that is a counterpart to this ``pretty strong converse.'' We prove
+that the large fraction of codes having a rate exceeding the erasure channel's quantum capacity have a quantum error tending to one in the limit of many channel uses. Thus, our work adds to the body of evidence that a fully strong converse theorem should hold for the quantum capacity of the erasure channel. As a side result, we prove that the classical capacity of the quantum erasure channel obeys the strong converse property.
+</p>
+</div>
+</td>
+</tr>
+
+	<tr class="talk">
+	<td class="time"> 11:15hr</td>
+	<td id= Martin >
+	Niel De Beaudrap and <b> Martin Roetteler(Microsoft Research) <br /> </b>
+	<font size='3'> Quantum linear network coding as one-way quantum computation
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+Network coding is a technique to maximize communication rates within a network, which may be used to devise communication protocols for simultaneous multi-party transmission of information. Linear network codes are examples of such protocols in which the local computations performed at the nodes in the network are limited to linear transformations of their input data, represented as elements of a ring such as the integers modulo 2 We demonstrate that the quantum linear network coding protocols of Kobayashi et al., which coherently simulate classical linear network coding protocols, correspond in a natural way to measurement-based quantum computations with graph states over qudits having a structure directly related to the network.
+</p>
+</div>
+</td>
+</tr>
+
+
+<tr class="event">
+	<td class="time">11:45hr</td>
+	<td>
+	<span class="talk-title">Lunch break</span>
+</td>
+</tr>
+
+	
+<tr class="talk">
+	<td class="time"> 14:00hr</td>
+	<td id= Fernando >
+	<b> Fernando G.S.L. Brandao(Department of Computer Science, University College London)</b> and Michael Kastoryano <b>- Invited Talk</b>    <br />
+	<font size='3'> Preparing Thermal States on a Quantum Computer by Dissipation
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>In this talk I will present recent results relating the time of preparation of thermal states by local quantum dissipative processes (i.e. master equations) with the static properties of the state. In particular connecting it to whether the thermal state has a .nite correlation length. 
+Our goal is to generalize to the quantum case a sequence of beautiful works – by Stroock, Zergalinski, Martinelli and others – in mathematical physics and statistical mechanics showing the equivalence of mixing in time (fast convergence of Glauber dynamics) to mix­ing in space (.nite correlation length in the Gibbs state) for classical models. 
+
+
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 14:45hr</td>
+	<td id= Mischa >
+	<b> Mischa Woods(Centre for Quantum Technologies, National University of Singapore, Singapore
+University College of London, Department of Physics & Astronomy, London)</b>, Marcus Cramer and Martin Plenio<br />
+	<font size='3'> Complexity of simulating systems coupled to infinite dimensional bosonic baths
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+We derive Lieb-Robinson bounds for bounded observables of a quantum system interacting with a quadratic bosonic Hamiltonian. We achieve super-linear spatial bounds, providing better than exponential decay outside of the light cone. This new bound has important consequences for the efficiency of simulating quantum systems numerically. We also find a new application of our Lieb-Robinson bound: We achieve bounds for discretising a continuum bath of bosonic oscillators even though there is no apparent locality in the model; providing bounds for the Spin-Boson model and its generalisations. Also, calculable error bounds for the error introduced when the fock space of every individual oscillator is truncated are derived. The final result is an error bound for truncating the infinitely many degrees of freedom of the environment thus providing fully rigorous error bounds for numerical simulations such as the TEDOPA method.
+
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="event">
+	<td class="time">15:15hr</td>
+	<td>
+	<span class="talk-title">Coffee/Tea Break</span>
+	</td>
+	</tr>
+	
+<tr class="talk">
+	<td class="time"> 15:45hr</td>
+	<td id= Niel >
+	<b> Niel De Beaudrap(CWI, Amsterdam)  </b> <br />
+	<font size='3'> Difficult instances of the counting problem for 2-quantum-SAT are very atypical
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+The problem "2-quantum-satisfiability" (2-QSAT) is the generalisation of the 2-CNF-SAT problem to quantum bits, and is equivalent to determining whether or not a spin-1/2 Hamiltonian with two-body terms is frustration-free. Similarly to the classical problem #2-SAT, the counting problem #2-QSAT of determining the size (i.e. the dimension) of the set of satisfying states is #P-complete. However, if we consider random instances of 2-QSAT in which constraints are sampled from the Haar measure, intractible instances have measure zero. An apparent reason for this is that almost all two-qubit constraints are entangled, which more readily give rise to long-range constraints.
+
+We investigate under what conditions product constraints also give rise to families of #2-QSAT instances which are efficiently solvable, by considering #2-QSAT involving only discrete distributions over tensor product operators. This special case of #2-QSAT interpolates between classical #2-SAT, and #2-QSAT involving arbitrary product constraints. We find that such instances of #2-QSAT, defined on Erdos-Renyi graphs or bond-percolated lattices, are almost surely efficiently solvable except to the extent that they are biased to resemble monotone instances #2-SAT.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 16:15hr</td>
+	<td id= Juan >
+	<b> Juan Miguel Arrazola(Institute for Quantum Computing)</b> and Norbert Lutkenhaus <br /> 
+	<font size='3'> Quantum Communication Complexity with Coherent States and Linear Optics
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+Light is the natural candidate to serve as a carrier of quantum information. Unfortunately, generating complex states of light, such as entangled states of many qubits, is a notoriously challenging task, posing great challenges to the implementation of many protocols in quantum communication. In this work, we introduce a general mapping for encoding quantum communication protocols involving pure states of multiple qubits, unitary transformations, and projective measurements into another set of protocols that employ coherent states of light in a superposition of optical modes, linear optics transformations and measurements with single-photon threshold detectors. This provides a general framework for transforming a wide class of protocols in quantum communication into a form in which they can be implemented with current technology. In particular, we apply the mapping to quantum communication complexity, providing general conditions under which quantum protocols can be implemented with coherent states and linear optics while retaining exponential separations in communication complexity compared to the classical case. Finally, we make use of our results to construct a protocol for the Hidden Matching problem that retains the known exponential gap between quantum and classical one-way communication complexity.
+</p>
+</div>
+</td>
+</tr>
+
+<tr class="talk">
+	<td class="time"> 16:45hr</td>
+	<td id= Iordanis >
+	André Chailloux, <b> Iordanis Kerenidis(CNRS-Univ Paris)</b>, Srijita Kundu and Jamie Sikora<br />
+	<font size='3'> Optimal bounds for parity-oblivious random access codes with applications
+</font><br />
+	<span class="abstract-show"><img src="images/abstract-down.png" alt="Arrow" class="imgabstract" height="10" width="10" /> <span class="text">Abstract</span></span>
+	<div class="talk-abstract">
+	<p>
+Random Access Codes is an information task that has been extensively studied and found many applications in quantum information. In this scenario, Alice receives an $n$-bit string $x$, and wishes to encode $x$ into a quantum state $\rho_x$, such that Bob, when receiving the state $\rho_x$, can choose any bit $i \in [n]$ and recover the input bit $x_i$ with high probability. Here we study a variant called parity-oblivious random acres codes, where we impose the cryptographic property that Bob cannot infer any information about the parity of any subset of bits of the input, apart form the single bits $x_i$. 
+
+We provide the optimal quantum parity-oblivious random access codes and show that they are asymptotically better than the optimal classical ones. For this, we relate such encodings to a non-local game and provide tight bounds for the success probability of the non-local game via semi-definite programming. Our results provide a large non-contextuality inequality violation and resolve the main open question in \cite{SBKTP09}.
+</p>
+</div>
+</td>
+</tr>
+
+	
+	
+
+	
+	<tr class="event">
+	<td class="time">17:15hr</td>
+	<td>
+	<span class="talk-title">End of the day</span>
+	</td>
+	</tr>
+	
+	</tbody>
+	</table>
+	
+	
+<br>
+<br>
+
+				
+				
+				
+
+
+				
+			</div><!-- end Content-->
+		</div><!-- end Container-->
+	</div><!-- end Wrap-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1184479-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</td>
+</table>
+
+</body>
+
+
+
+
+<tr>
+
+	<td>&nbsp;</td>
+	<td id="footer">Copyright&copy; 2014 Centre for Quantum Technologies</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+<map name="logoMap">
+  <area shape="rect" coords="16,23,392,98" href="http://quantumlah.org" alt="Centre for quantum technologies" title="Centre for Quantum Technologies">
+  <area shape="rect" coords="797,20,976,100" href="http://www.nus.edu.sg" alt="National University of Singapore" title="National University of Singapore">
+</map>
+</body>
+
+
+
+
+</html>

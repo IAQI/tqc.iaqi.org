@@ -1,0 +1,228 @@
+/*base*/
+*{
+ 	margin:0 auto;
+	padding:0;
+}
+
+body{
+	font-family: Tahoma, Geneva, sans-serif;
+	width:100%;
+	font-size: 0.8em;
+}
+
+.divmain {
+	position: relative;
+	width:750px;
+}
+
+/*header*/
+.divmain div.title{
+	font-size: 1.2em;
+	background-color: #F0FBEB;
+	position: relative;
+	text-align:left;
+	color:#ffffff;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*footer*/
+.divmain div.copyright{
+	font-size: 0.8em;
+	background-color: #666e99;
+	position: relative;
+	color:#ffffff;
+	padding: 0px;
+	text-align:right;
+}
+
+.divmain div.copyright a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+/* footer link */
+.linksEng {
+	padding: 0px 0px;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	background-color: white;
+}
+
+/*left menu*/
+.leftmenu {
+	background-color:white;
+	text-align:center;
+
+}
+	
+.leftmenu div.menutitle {
+	font-weight:bold;
+	display:block;
+	width: 147px;
+	background-color: white;
+	padding: 0px;
+	font-size:0.9em;
+	color:black;
+	text-align:left;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.leftmenu a.links{
+	font-weight:bold;
+	display:block;
+	width: 145px;
+	padding: 0px;
+	text-decoration:underline;
+	font-size:0.9em;
+	text-align:left;
+	margin-bottom:5px;
+	background-color: white;
+}
+
+.leftmenu a.links:hover{
+background-color:#e8eef0;
+color:#0066cc;
+}
+
+
+/* midashi */
+h1 {
+/*	font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 0.9em;
+	font-weight: bold;
+	color: black;
+/*	border: 1px solid #666e99;	*/
+	background-color: white;
+	padding: 0px;
+	padding-left:0 px;
+	margin:5 0;
+}
+
+/* komidashi */
+h2 {
+/*	font-family: Arial, Helvetica, sans-serif;*/
+	font-size: 0.9em;
+	font-weight: bold;
+	color:black;
+	background-color: white;
+/*	border: 1px solid #666e99;*/
+	margin: 2px 0px 2px 0px;
+	background-repeat:no-repeat;
+	padding-left:0 px;
+	padding-top:0 px;
+	margin:0 0;
+
+}
+/* komidashi small */
+h3 {
+	font-size: 0.9em;
+	font-weight: bold;
+	color:black;
+	margin-top:0.5em;
+	margin-bottom:0;
+	padding: 5px 5px 10px 0px;
+	line-height: 1.3em;
+}
+
+h4 {
+	font-size: 0.9em;
+	font-weight: bold;
+	color:#009999;
+	margin-bottom:0px;
+
+}
+
+.important {
+	font-weight: bold;
+	color: #990033;
+}
+
+/* main text */
+
+
+.mainEnglish{
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+
+.mainborder{
+	border: 1px solid #FFFFFF;
+	margin: 2px 0px 5px 0px;
+}
+
+.mainEnglish div.main{
+	padding: 5px 0px 10px 0px;
+}
+
+.mainEnglish div.Pad{
+	padding: 0px 0px 0px 0px;
+}
+
+.mainEnglish div.newsEng{
+	margin: 0px;
+	background-repeat:no-repeat;
+	padding-left:0px;
+	padding-top:0px;
+}
+
+.mainEnglish span.mainL{
+	font-size: 1.2em;
+}
+
+
+/* table */
+.mainEngTable{
+	font-size: 1em;
+}
+
+.mainEngTable td{
+	padding: 0px;
+}
+
+.mainEngTable th{
+	background-color: #666e99;
+	font-weight: bold;
+	color:#ffffff;
+}
+li {
+	line-height: 1.2em;
+	list-style-position: inside;
+}
+
+li.second {
+ margin-left:30px;
+ list-style: square;
+}
+
+li.outside {
+	list-style-position: outside;
+	 margin-left:20px;
+}
+
+.importantL {
+	font-weight: bold;
+	color: #990033;
+	font-size: 1.3em;
+}
+
+/*
+     FILE ARCHIVED ON 16:27:31 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:08:04 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.455
+  load_resource: 103.419
+  PetaboxLoader3.resolve: 51.365
+  PetaboxLoader3.datanode: 20.043
+*/

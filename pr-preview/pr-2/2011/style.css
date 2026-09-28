@@ -1,0 +1,132 @@
+* {margin:0; padding:0}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	background-image: url('https://web.archive.org/web/20110804115943im_/http://gcc.ls.fi.upm.es/tqc2011/images/bg.gif');
+	background-repeat: all;
+}
+
+#contenedor {
+	min-height: 100%;
+	margin: 0 auto 0 auto;
+	background-color: white;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+	width: 740px;
+}
+
+#cabecera {
+	padding-bottom: 10px;
+}
+
+#menu {
+	font-size: small;
+
+	padding-left: 20px;
+	padding-right: 20px;
+
+	width: 170px;
+
+	float: left;
+
+	border-width: 0 1px 0 0;
+	border-style: dashed;
+}
+
+#menu h3 {
+	margin-top: 10px;
+}
+
+#contenido {
+	font-size: small;
+
+	width: 490px;
+
+	padding: 0px 20px 10px 20px;
+
+	margin-left: 210px;
+
+	min-height: 1300px;
+} 
+
+p.logos {
+	text-align: center;
+}
+
+p.org {
+	text-align: center;
+	margin-left: -15px;
+}
+
+ul {
+	padding: 5px 0 5px 20px;
+}
+
+h1 {
+	margin: 10px 0px 5px 0px;
+}
+
+h2 {
+	margin: 7px 0 4px 0;
+}
+
+h3 {
+	margin: 5px 0 3px 0;
+}
+
+h4 {
+	margin: 3px 0 2px 0;
+}
+
+p {
+	margin: 5px 0 5px 0;
+}
+
+a:visited{
+	color: #0000FF;
+}
+
+a:hover{
+	color: #FF0000;
+}
+
+h2 a:hover {
+	color: #000000;
+}
+
+table.program {
+	margin: 0px auto 0px auto;
+
+	border-width: 1px;
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+table.program th, td {
+	padding: 5px;
+
+	border-width: 1px;
+	border-style: dashed;
+	border-color: gray;
+}
+
+
+/*
+     FILE ARCHIVED ON 11:59:43 Aug 04, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:06:18 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.572
+  load_resource: 339.503
+  PetaboxLoader3.resolve: 279.17
+  PetaboxLoader3.datanode: 42.98
+*/

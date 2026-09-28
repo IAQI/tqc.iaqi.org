@@ -1,0 +1,239 @@
+/*base*/
+*{
+ 	margin:0 auto;
+	padding:0;
+}
+
+body{
+	width:100%;
+}
+
+.divmain {
+	position: relative;
+	width:750px;
+}
+
+/*header*/
+.divmain div.title{
+	font-size: 1.2em;
+	background-color: #333366;
+	position: relative;
+	text-align:left;
+	color:#ffffff;
+	padding-left: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*footer*/
+.divmain div.copyright{
+	font-size: 0.8em;
+	background-color: #666e99;
+	position: relative;
+	color:#ffffff;
+	padding: 3px;
+	text-align:right;
+}
+
+.divmain div.copyright a{
+	color:#ffffff;
+	text-decoration:none;
+}
+
+/* footer link */
+.linksEng {
+	padding: 2px 0px;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	background-color: #CCCCCC;
+}
+
+/*left menu*/
+.leftmenu {
+	background-color:#a3bac2;
+	text-align:center;
+
+}
+
+.leftmenu span.news{
+	display:block;
+	width: 147px;
+	font-size:0.8em;
+	text-align:left;
+	margin-top:2px;
+	margin-bottom:2px;
+	padding: 2px;
+	background-color: #dfe7ea;
+}
+	
+.leftmenu div.menutitle {
+	font-weight:bold;
+	display:block;
+	width: 147px;
+	background-color: #333366;
+	padding: 3px;
+	font-size:0.9em;
+	color:#ffffff;
+	text-align:left;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.leftmenu a.links{
+	font-weight:bold;
+	display:block;
+	width: 145px;
+	border: 1px solid #666e99;
+	padding: 3px;
+	text-decoration:none;
+	font-size:0.9em;
+	color:#333366;
+	text-align:left;
+	margin-bottom:5px;
+	background-color: #b5c8ce;
+}
+
+.leftmenu a.links:hover{
+background-color:#e8eef0;
+color:#0066cc;
+}
+
+
+/* midashi */
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #333366;
+	padding: 3px;
+	margin:5 0;
+}
+
+/* komidashi */
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color:#dfe7ea;
+	background-color: #666e99;
+	border: 1px solid #666e99;
+	margin: 2px 2px 2px 2px;
+	background-image:url("https://web.archive.org/web/20160505203733im_/http://www.brl.ntt.co.jp/tqc/2008/img/head.gif");
+	background-repeat:no-repeat;
+	padding-left:20px;
+	padding-top:1px;
+	margin:3 0;
+
+}
+/* komidashi small */
+h3 {
+	font-size: 0.9em;
+	font-weight: bold;
+	color:#333366;
+	margin-top:0.5em;
+	margin-bottom:0;
+	padding: 5px 5px 10px 10px;
+	line-height: 1.3em;
+}
+
+h4 {
+	font-size: 0.8em;
+	font-weight: bold;
+	color:#333366;
+	margin-bottom:0px;
+
+}
+
+.important {
+	font-weight: bold;
+	color: #990033;
+}
+
+/* main text */
+
+
+.mainEnglish{
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+
+.mainborder{
+	border: 1px solid #cccccc;
+	margin: 2px 2px 5px 2px;
+}
+
+.mainEnglish div.main{
+	padding: 5px 5px 10px 10px;
+}
+
+.mainEnglish div.Pad{
+	padding: 0px 0px 0px 15px;
+}
+
+.mainEnglish div.newsEng{
+	margin: 2px;
+	background-image:url("https://web.archive.org/web/20160505203733im_/http://www.brl.ntt.co.jp/tqc/2008/img/news.png");
+	background-repeat:no-repeat;
+	padding-left:25px;
+	padding-top:0px;
+}
+
+.mainEnglish span.mainL{
+	font-size: 1.2em;
+}
+
+
+/* table */
+.mainEngTable{
+	font-size: 1em;
+}
+
+.mainEngTable td{
+	padding: 3px;
+}
+
+.mainEngTable th{
+	background-color: #666e99;
+	font-weight: bold;
+	color:#ffffff;
+}
+li {
+	line-height: 1.2em;
+	list-style-position: inside;
+}
+
+li.second {
+ margin-left:30px;
+ list-style: square;
+}
+
+li.outside {
+	list-style-position: outside;
+	 margin-left:20px;
+}
+
+.importantL {
+	font-weight: bold;
+	color: #990033;
+	font-size: 1.3em;
+}
+
+/*
+     FILE ARCHIVED ON 20:37:33 May 05, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:02:07 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.458
+  load_resource: 102.248
+  PetaboxLoader3.resolve: 30.574
+  PetaboxLoader3.datanode: 54.411
+*/

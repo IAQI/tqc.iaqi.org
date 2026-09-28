@@ -1,0 +1,71 @@
+var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opens = _____WB$wombat$assign$function_____("opens");
+$(document).ready( function () {
+$('.regSites #checkoutButton').text('Complete registration & pay');
+$('#personalForm select[name=Gender]').prepend(new Option('', '', false, true));
+$('#invoiceForm select[name=InvoiceGender]').prepend(new Option('', '', false, true));
+
+//$('select[name$=Gender].text('Gender (for statistics purposes'));
+
+
+$('select[name=Gender] option[value=female]').insertAfter($('select[name=Gender] option[value=unspecified]'));
+$('select[name$=Gender] option[value=male]').text("man");
+$('select[name$=Gender] option[value=male]').val("man");
+$('select[name$=Gender] option[value=female]').text("woman");
+$('select[name$=Gender] option[value=female]').val("woman");
+$('select[name$=Gender] option[value=unspecified]').text("other");
+$('select[name$=Gender] option[value=unspecified]').val("other");
+
+var textnode = document.createTextNode("Berlin, 27 – 29 September");
+var h2node = document.createElement("h2");
+h2node.appendChild(textnode);
+document.getElementsByClassName("jumbotron-headimg")[0].appendChild(h2node);
+
+var content = document.getElementById('gender');
+
+if(content) {
+var parent = content.parentNode;
+
+parent.childNodes[28].parentNode.insertBefore(content, parent.childNodes[28].nextSibling);
+}
+
+
+var pNode = document.createElement("p");
+var attributionLink = document.createElement("a");
+var attributionText = document.createTextNode("City vector designed by Freepik");
+var attributionPreText = document.createTextNode("Header: ");
+
+
+attributionLink.setAttribute("href", "https://web.archive.org/web/20230913084018/http://www.freepik.com/free-photos-vectors/city");
+pNode.setAttribute("class", "attribution");
+
+document.getElementsByClassName("footer")[0].appendChild(pNode);
+pNode.appendChild(attributionPreText);
+pNode.appendChild(attributionLink);
+attributionLink.appendChild(attributionText);
+
+});
+}
+
+/*
+     FILE ARCHIVED ON 08:40:18 Sep 13, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:09:13 May 09, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 4.175
+  load_resource: 71.679
+  PetaboxLoader3.resolve: 65.797
+  PetaboxLoader3.datanode: 4.162
+*/
