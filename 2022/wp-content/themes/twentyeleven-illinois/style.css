@@ -1,0 +1,26 @@
+/*
+Theme Name:     Illinois - Twenty Eleven
+Theme URI:      http://publish.illinois.edu/
+Description:    Follows Illinios identity standards and passes FAE, child of the Twenty Eleven theme
+Author:         Mike Bohlmann, Stephen Butler
+Author URI:     http://publish.illinois.edu/
+Version:        1.0
+Tags:           blog, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain:    twentyeleven
+*/
+
+@import url("2011style.css");
+
+/* University of Illinois */
+
+#imark {
+	float: left;
+	padding: 3.65625em 0 0;
+	margin-right: 20px;
+	height: 120px;
+}
+
+#site-title,
+#site-description {
+	clear: none;
+}
