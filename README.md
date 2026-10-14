@@ -51,3 +51,18 @@ wget --mirror \
 - Removing `--reject-regex` that blocks query parameters (Wayback uses them)
 - Adding `--no-check-certificate` for older snapshots
 - Using `--reject-regex` to skip Wayback's UI elements and timestamp variations
+
+## Localizing Theme Assets
+
+WordPress exports often keep loading their CSS, JS and fonts from the original
+conference host, so the archive loses its styling once that host goes away
+(e.g. 2019, whose host's certificate expired). To copy those assets into the
+archive and rewrite the links to relative paths:
+
+```bash
+python3 -I tools/localize_assets.py 2020 tqc2020.lu.lv
+python3 -I tools/localize_assets.py 2022 tqc2022-conference.iquist.illinois.edu publish.illinois.edu
+```
+
+Add `--insecure` only for a host whose TLS certificate has expired. The script
+is idempotent: files already present are not downloaded again.
