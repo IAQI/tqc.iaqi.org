@@ -29,7 +29,13 @@ if insecure:
     ctx.verify_mode = ssl.CERT_NONE
 
 def fetch(host, path):
-    dest = os.path.join(year, path)
+    # never write outside YEAR_DIR, whatever url() paths remote CSS contains
+    base = os.path.realpath(year)
+    dest = os.path.realpath(os.path.join(base, path))
+    if (os.path.isabs(path) or os.path.commonpath([base, dest]) != base
+            or not os.path.normpath(path).startswith(('wp-content' + os.sep, 'wp-includes' + os.sep))):
+        print('SKIP', host, path)
+        return None, False
     if os.path.exists(dest):
         return dest, False
     url = 'https://%s/%s' % (host, urllib.parse.quote(path))
