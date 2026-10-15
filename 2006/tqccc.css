@@ -121,7 +121,7 @@ h2 {
 	background-color: #666e99;
 	border: 1px solid #666e99;
 	margin: 2px 2px 2px 2px;
-	background-image:url("https://web.archive.org/web/20210513143353im_/http://www.kecl.ntt.co.jp/tqc/2006/img/head.gif");
+	background-image:url("img/head.gif");
 	background-repeat:no-repeat;
 	padding-left:20px;
 	padding-top:1px;
@@ -167,7 +167,7 @@ h3 {
 
 .mainEnglish div.newsEng{
 	margin: 2px;
-	background-image:url("https://web.archive.org/web/20210513143353im_/http://www.kecl.ntt.co.jp/tqc/2006/img/news.png");
+	background-image:url("img/news.png");
 	background-repeat:no-repeat;
 	padding-left:25px;
 	padding-top:0px;
