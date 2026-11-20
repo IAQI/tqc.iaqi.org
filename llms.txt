@@ -1,0 +1,194 @@
+# TQC archive
+
+> Static copies of the websites of past Conference on the Theory of Quantum Computation, Communication and Cryptography (TQC) conferences, 2006–2026, preserved by the International Association for Quantum Information (IAQI). Pages are archived as they were published; programs, accepted papers, abstracts and slides are mostly in HTML and PDF.
+
+The current conference is at https://tqc-conference.org/. For structured, machine-readable data (talks, posters, authors with ORCID, committees, videos) use QuantumDB, which covers the same conferences: https://quantumdb.iaqi.org/llms.txt (data under CC0 1.0).
+
+## Structured data (recommended for agents)
+
+- [All conferences, with links to every per-year export](https://quantumdb.iaqi.org/api/v1/export/all.json)
+- One conference as JSON: `https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-<year>`; CSV: append `/talks.csv`, `/posters.csv` or `/committees.csv`
+- [QuantumDB guide for LLMs](https://quantumdb.iaqi.org/llms.txt)
+
+## Archived editions
+
+### TQC 2026
+
+2026-08-31 to 2026-09-04; Sherbrooke, Canada
+
+- [Archived website](https://tqc.iaqi.org/2026/)
+- [Schedule](https://tqc.iaqi.org/2026/schedule/)
+- [Accepted Papers](https://tqc.iaqi.org/2026/accepted-papers/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2026), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2026/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2026/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2026/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2026)
+
+### TQC 2025
+
+2025-09-13 to 2025-09-19; Bengaluru, India
+
+- [Archived website](https://tqc.iaqi.org/2025/)
+- [Schedule](https://tqc.iaqi.org/2025/schedule/)
+- [Accepted talks](https://tqc.iaqi.org/2025/accepted-talks/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2025), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2025/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2025/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2025/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2025)
+
+### TQC 2022
+
+2022-07-11 to 2022-07-15; Illinois, United States
+
+- [Archived website](https://tqc.iaqi.org/2022/)
+- [Program](https://tqc.iaqi.org/2022/program/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2022), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2022/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2022/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2022/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2022)
+
+### TQC 2021
+
+2021-07-05 to 2021-07-08; Riga, Latvia; online
+
+- [Archived website](https://tqc.iaqi.org/2021/)
+- [Schedule](https://tqc.iaqi.org/2021/schedule/)
+- [Accepted Papers](https://tqc.iaqi.org/2021/program/accepted-papers/)
+- [Call for Papers](https://tqc.iaqi.org/2021/call-for-papers/)
+- [Pre-recorded talks](https://tqc.iaqi.org/2021/pre-recorded-talks/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2021), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2021/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2021/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2021/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2021)
+
+### TQC 2020
+
+2020-06-09 to 2020-06-12; Riga, Latvia; online
+
+- [Archived website](https://tqc.iaqi.org/2020/)
+- [Schedule](https://tqc.iaqi.org/2020/schedule/)
+- [Accepted Papers](https://tqc.iaqi.org/2020/accepted-papers/)
+- [Call for Papers](https://tqc.iaqi.org/2020/call-for-papers/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2020), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2020/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2020/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2020/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2020)
+
+### TQC 2019
+
+2019-06-03 to 2019-06-07; Maryland, United States
+
+- [Archived website](https://tqc.iaqi.org/2019/)
+- [Program Details](https://tqc.iaqi.org/2019/schedule/)
+- [Accepted Talks](https://tqc.iaqi.org/2019/accepted-talks/)
+- [Call for papers](https://tqc.iaqi.org/2019/call-for-papers/)
+- [Accepted Posters for NISQ](https://tqc.iaqi.org/2019/nisq-posters/)
+- [Committees](https://tqc.iaqi.org/2019/committees/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2019), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2019/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2019/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2019/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2019)
+
+### TQC 2018
+
+2018-07-16 to 2018-07-18; Sydney, Australia
+
+- [Archived website](https://tqc.iaqi.org/2018/)
+- [PROGRAMME](https://tqc.iaqi.org/2018/accepted-talks.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2018), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2018/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2018/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2018/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2018)
+
+### TQC 2017
+
+2017-06-14 to 2017-06-16; Paris, France
+
+- [Archived website](https://tqc.iaqi.org/2017/)
+- [Program](https://tqc.iaqi.org/2017/program.html)
+- [Committees](https://tqc.iaqi.org/2017/committees.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2017), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2017/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2017/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2017/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2017)
+
+### TQC 2016
+
+2016-09-27 to 2016-09-29; Berlin, Germany
+
+- [Archived website](https://tqc.iaqi.org/2016/)
+- [Programme](https://tqc.iaqi.org/2016/Programme.html)
+- [Schedule](https://tqc.iaqi.org/2016/Schedule.html)
+- [Committees](https://tqc.iaqi.org/2016/Committees.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2016), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2016/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2016/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2016/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2016)
+
+### TQC 2015
+
+2015-05-20 to 2015-05-22; Brussels, Belgium
+
+- [Archived website](https://tqc.iaqi.org/2015/)
+- [TQC 2015 -- Program](https://tqc.iaqi.org/2015/program.html)
+- [TQC 2015 -- Schedule](https://tqc.iaqi.org/2015/schedule.html)
+- [TQC 2015 -- Committees](https://tqc.iaqi.org/2015/committees.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2015), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2015/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2015/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2015/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2015)
+
+### TQC 2014
+
+2014-05-21 to 2014-05-23; Singapore, Singapore
+
+- [Archived website](https://tqc.iaqi.org/2014/)
+- [TQC 2014 Program](https://tqc.iaqi.org/2014/program.html)
+- [Committees](https://tqc.iaqi.org/2014/postersession.html)
+- [Committees](https://tqc.iaqi.org/2014/committees.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2014), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2014/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2014/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2014/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2014)
+
+### TQC 2013
+
+2013-05-21 to 2013-05-23; Guelph, Canada
+
+- [Archived website](https://tqc.iaqi.org/2013/)
+- [Program](https://tqc.iaqi.org/2013/program.html)
+- [Committee](https://tqc.iaqi.org/2013/committee.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2013), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2013/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2013/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2013/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2013)
+
+### TQC 2012
+
+2012-05-17 to 2012-05-19; Tokyo, Japan
+
+- [Archived website](https://tqc.iaqi.org/2012/)
+- [TQC 2012 Accepted Papers](https://tqc.iaqi.org/2012/en/accepted_paper.html)
+- [TQC 2012 Invited Speakers](https://tqc.iaqi.org/2012/en/invited.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2012), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2012/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2012/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2012/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2012)
+
+### TQC 2011
+
+2011-05-24 to 2011-05-26; Madrid, Spain
+
+- [Archived website](https://tqc.iaqi.org/2011/)
+- [Program](https://tqc.iaqi.org/2011/program.php.html)
+- [Talks](https://tqc.iaqi.org/2011/talks.php.html)
+- [Posters](https://tqc.iaqi.org/2011/posters.php.html)
+- [Committees](https://tqc.iaqi.org/2011/committees.php.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2011), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2011/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2011/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2011/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2011)
+
+### TQC 2010
+
+2010-04-13 to 2010-04-15; Leeds, United Kingdom
+
+- [Archived website](https://tqc.iaqi.org/2010/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2010), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2010/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2010/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2010/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2010)
+
+### TQC 2009
+
+2009-05-11 to 2009-05-13; Waterloo, Canada
+
+- [Archived website](https://tqc.iaqi.org/2009/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2009), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2009/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2009/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2009/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2009)
+
+### TQC 2008
+
+2008-01-30 to 2008-02-01; Tokyo, Japan
+
+- [Archived website](https://tqc.iaqi.org/2008/)
+- [Accepted paper](https://tqc.iaqi.org/2008/en/accepted_paper.html)
+- [TQC 2008 Invited Speakers](https://tqc.iaqi.org/2008/en/invited.html)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2008), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2008/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2008/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2008/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2008)
+
+### TQC 2007
+
+2007-01-24 to 2007-01-25; Nara, Japan
+
+- [Archived website](https://tqc.iaqi.org/2007/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2007), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2007/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2007/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2007/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2007)
+
+### TQC 2006
+
+2006-02-22 to 2006-02-23; Kanagawa, Japan
+
+- [Archived website](https://tqc.iaqi.org/2006/)
+- Data: [JSON](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2006), [talks CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2006/talks.csv), [posters CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2006/posters.csv), [committees CSV](https://quantumdb.iaqi.org/api/v1/export/conferences/tqc-2006/committees.csv), [QuantumDB page](https://quantumdb.iaqi.org/conferences/tqc-2006)
+
+## Editions without an archived copy here
+
+- TQC 2024: [original website](https://tqc-conference.org/tqc-2024/), [QuantumDB](https://quantumdb.iaqi.org/conferences/tqc-2024)
+- TQC 2023: [original website](https://tqc-conference.org/tqc2023/), [QuantumDB](https://quantumdb.iaqi.org/conferences/tqc-2023)
+
+## Rights
+
+Facts about the conferences (titles, authors, dates) are free to use; QuantumDB dedicates its data to the public domain (CC0 1.0). Abstracts, slides, photos and recordings remain the property of their authors.
