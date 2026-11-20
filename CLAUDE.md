@@ -57,11 +57,15 @@ wget --mirror --convert-links --adjust-extension --page-requisites --no-parent \
 
 ### Adding a New Year
 
-1. Download the site using wget (see README.md)
-2. Move the downloaded directory to the root as `20XX/`
-3. Update `index.html` to add a link to the new year
-4. Verify all internal links work (wget's `--convert-links` should handle this)
-5. Commit and push to deploy via GitHub Pages
+Follow "Archiving a year" in the website guide of IAQI/conference-theme
+(`docs/website-guide.md`): `scripts/archive_year.py` mirrors the year, makes
+it self-contained, strips analytics and runs `scripts/archive_discovery.py`,
+which regenerates `robots.txt`, `sitemap.xml`, `llms.txt` and the Event JSON-LD
+of the year pages. Then update the past-editions table in `index.html`.
+
+Never edit `robots.txt`, `sitemap.xml`, `llms.txt` or the
+`<!-- iaqi-archive:... -->` blocks by hand; rerun `archive_discovery.py`
+(commit its output with a subject starting "archive-tools:").
 
 ### Editing the Landing Page
 
